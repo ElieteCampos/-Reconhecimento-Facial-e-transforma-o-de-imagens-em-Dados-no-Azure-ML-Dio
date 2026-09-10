@@ -1,31 +1,37 @@
-# Inteligência Artificial de Visão Computacional com Azure AI Foundry
 
-Este projeto foi desenvolvido como parte do cursp da DIO com o objetivo de explorar as capacidades de IA e Machine Learning da Microsoft Azure aplicadas à visão computacional. Foram realizados testes práticos envolvendo **reconhecimento facial**, **extração de textos em imagens (OCR)** e **geração automática de descrições contextuais (legendas)**.
+# Reconhecimento Facial, OCR e Análise de Imagens com Azure AI
 
-## 📁 Estrutura do Repositório
+Este projeto foi desenvolvido como parte da formação **Microsoft Azure AI Fundamentals (AI-900)** da DIO.
 
-* **inputs/**: Contém as imagens originais utilizadas nos testes do laboratório.
-* **output/**: Contém os resultados em texto (JSON/Txt) extraídos pela inteligência artificial.
+O objetivo foi explorar, na prática, recursos de **Visão Computacional do Microsoft Azure**, realizando testes de:
 
-## 🛠️ Passo a Passo do Processo
+- Detecção de faces;
+- Reconhecimento de texto em imagens utilizando OCR;
+- Análise de imagens;
+- Geração de descrições, tags e identificação de objetos.
 
-1. **Configuração no Azure**: Criação do recurso de inteligência artificial unificado no portal do Azure.
-2. **Acesso ao Azure AI Foundry**: Utilização da nova plataforma da Microsoft para gerenciar os modelos de visão computacional.
-3. **Execução dos Testes**: Upload das imagens contidas na pasta `inputs` para processamento simultâneo das seguintes ferramentas:
-   * **Detecção Facial**: Mapeamento de rostos, pontos de referência faciais e estimativa de atributos.
-   * **Extração de Texto (OCR)**: Identificação e digitalização de palavras e frases contidas nas imagens.
-   * **Descrição da Imagem**: Geração de legendas automáticas baseadas no contexto e nos objetos identificados na cena.
+Durante o desenvolvimento do projeto, utilizei também o **ChatGPT, da OpenAI, como ferramenta de apoio e orientação técnica**, principalmente para compreender as mudanças entre a interface apresentada no curso e a versão atual do Microsoft Azure, interpretar mensagens de erro e utilizar a API do Azure Vision.
 
-## 📊 Principais Insights Obtidos
+---
 
-* **Análise Multimodal**: A IA da Microsoft consegue realizar três tarefas complexas e diferentes sobre a mesma imagem em questão de milissegundos, mostrando alto poder de processamento.
-* **Leitura de Textos Complexos**: O sistema de OCR se mostrou extremamente resiliente, conseguindo identificar letras mesmo em superfícies curvas, com sombras ou fontes estilizadas.
-* **Contextualização Semântica**: A descrição da imagem não apenas lista os objetos soltos, mas entende a relação entre eles (ex: identificar "uma pessoa sentada trabalhando em um escritório" em vez de apenas listar "computador, cadeira, humano").
+## Objetivo do projeto
 
-## 🚀 Possibilidades de Aplicação no Mundo Real
+O objetivo deste laboratório foi experimentar alguns dos principais recursos de visão computacional disponíveis no Microsoft Azure e entender como imagens podem ser transformadas em informações estruturadas.
 
-* **Acessibilidade**: Aplicativos que descrevem o ambiente e leem placas/textos em tempo real para pessoas com deficiência visual.
-* **Automação de Processos (RPA)**: Leitura e cadastro automático de documentos que misturam fotos e dados textuais (como CNH, RG ou passaportes).
-* **Segurança e Monitoramento**: Sistemas inteligentes de vigilância que reconhecem faces autorizadas e lêem placas de veículos ao mesmo tempo.
-* **Moderação de Conteúdo**: Filtros para redes sociais que analisam o que há escrito e o que aparece em fotos antes de permitir a publicação.
+As imagens utilizadas nos testes foram armazenadas na pasta `inputs`, enquanto os resultados e evidências das análises foram armazenados na pasta `output`.
 
+Estrutura do repositório:
+
+```text
+.
+├── inputs/
+│   ├── imagem-face.jpg
+│   ├── imagem-ocr.jpg
+│   └── imagem-analise.jpg
+│
+├── output/
+│   ├── resultado-face.png
+│   ├── resultado-ocr.png
+│   └── resultado-analise.png
+│
+└── README.md
